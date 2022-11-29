@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body style="background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+    <div class="container" style="margin-top:5rem;">
+        <h3 class="fs-3 text-center text-capitalize fw-bold mb-3">Yapılacaklar Listesi V.1.0</h3>
+        <figcaption class="blockquote-footer text-center">
+            Berkay Yüksel <cite title="Developer">Web Developer</cite>
+          </figcaption>
+        <div class="card row col-auto">
+            <div class="card-header">Yapılacaklar Listesi</div>
+            <div class="card-body">
+                <div class="form-group">
+                <form id="todo-form" name="form" action="#">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">&#187;</span>
+                    <input type="text" class="form-control input-group input-group-lg" name="todo" id = "todo" placeholder="Yapılacak Giriniz">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary w-100 mt-3">Eklemek İçin Tıklayın</button>
+                </form>
+                <hr>
+                </div>
+                
+            </div>
+            <div class="card-body">
+                <hr>
+                <h5 class="card-title" id="task-title">Yapılacaklar</h5>
+                <br>
+                <div class="form-row">
+                            <div class="form-group col">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text" id="inputGroup-sizing-lg">&#187;</span>
+                                <input class="form-control" type="text" name="filter" id = "filter" placeholder="Bir Yapılacak Arayın...">
+                                </div>
+                            </div>
+            
+             <hr>
+             <ul class="list-group">
+
+             </ul>
+             <hr>
+             <a id= "clear-todos" class="btn btn-outline-danger w-100" href="#">Tüm Yapılacakları Temizleyin</a>
+            </div>
+        </div>
+        <div class="card-footer">
+            <p class="text-center">Bazen plan ne kadar dikkatli ve iyi kurulursa kurulsun dış kuvvet ve etkilerle değişir, bozulur. 
+                İşte talihe ya da talihsizliğe bu yüzden inanırız.
+                - <strong>John Steinbeck</strong></p>
+        </div>
+    </div>
+    <br />
+    <br />
+<script src="./app.js"></script>
+</body>
+</html>
